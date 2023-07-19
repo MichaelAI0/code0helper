@@ -2,11 +2,10 @@ var textElement;
 var documentBody;
 window.onload = function () {
   document
-    .getElementById("changeColorButton") // Corrected here
+    .getElementById("changeColorButton")
     .addEventListener("click", function () {
-      textElement = document.getElementById("mainText");
+      let textElement = document.getElementById("mainText");
       if (textElement !== null) {
-        textElement.style.color = "black";
         textElement.style.color =
           textElement.style.color == "blue" ? "black" : "blue";
       }
